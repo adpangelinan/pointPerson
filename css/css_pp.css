@@ -1,0 +1,50 @@
+#title {
+  text-align: left;
+  background-color: black;
+  position: static;
+  width: 50%;
+  height: 100px;
+  display: inline-block;
+  color: rgb(51,153,255)
+}
+#unlogged {
+    text-align: left;
+    background-color: black;
+    color: rgb(51,153,255);
+    position: relative;
+    left: 50%;
+    bottom: 100px;
+    width: 50%;
+    height: 100px;
+
+    
+}
+#selectNav{
+    position:relative;
+    bottom:100px;
+}
+a:hover,a:visited {
+  color: black;
+}
+a.nav-item {
+  color: black;
+}
+body {
+  background-color: rgb(192, 192, 192);
+  color: black;
+  font-family: "Times New Roman";
+}
+
+#main {
+    padding-bottom: 200px; /*ensure nothing drops below bottom nav*/
+}
+#botNav {
+    position: fixed;
+    bottom: 0;
+    background-color: rgb(64,64,64);
+    color: antiquewhite;
+    width: 100%;
+    height: 200px;
+    font-size: 12px;
+
+}
