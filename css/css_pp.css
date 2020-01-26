@@ -32,7 +32,7 @@ a.nav-item {
 body {
   background-color: rgb(192, 192, 192);
   color: black;
-  font-family: "Times New Roman";
+  font-family: "Futura Medium";
 }
 
 #main {
@@ -46,5 +46,11 @@ body {
     width: 100%;
     height: 200px;
     font-size: 12px;
+
+}
+
+#TOS {
+
+    background-color: blue
 
 }
