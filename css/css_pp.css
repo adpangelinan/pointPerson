@@ -35,6 +35,13 @@ body {
   font-family: "Futura Medium";
 }
 
+button {
+    background-color: rgb(64,64,64);
+    border-color: rgb(64,64,64);
+    color: white;
+    border: none;
+}
+
 #main {
     padding-bottom: 200px; /*ensure nothing drops below bottom nav*/
 }
