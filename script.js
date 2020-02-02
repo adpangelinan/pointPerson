@@ -137,3 +137,23 @@ function userSearch() {
     window.open('https://google.com/search?q='+search)
     console.log(search)
 }
+
+function getDate() {
+
+    var myDate = new Date()
+    return myDate.getFullYear()
+
+}
+
+var myVar = document.getElementById("pointDate");
+var myTxt = myVar.innerHTML;
+myTxt = myTxt + getDate();
+myVar.innerHTML = myTxt;
+
+
+alert("HERE IS A MESSAGE")
+
+function alertTest() {
+    alert("HERE IS ANOTHER MESSAGE")
+}
+
