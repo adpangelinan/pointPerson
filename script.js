@@ -145,15 +145,54 @@ function getDate() {
 
 }
 
+function hideMain() {
+    var mainDiv = document.getElementById("main");
+    mainDiv.style.display = "none";
+
+}
+function showMain() {
+    var mainDiv = document.getElementById("main");
+    mainDiv.style.display = "inline";
+
+}
+function hideTermsOfService() {
+    var tOSDIV = document.getElementById("termsOfService");
+    tOSDIV.style.display = "none";
+}
+function showTermsOfService() {
+    var tOSDIV = document.getElementById("termsOfService");
+    tOSDIV.style.display = "inline";
+}
+function hideLogin() {
+    var log = document.getElementById("termsOfService");
+    log.style.display = "none";
+}
+fucntion showLogin() {
+    var log = document.getElementById("termsOfService");
+    log.style.display = "inline";
+}
+
 var myVar = document.getElementById("pointDate");
 var myTxt = myVar.innerHTML;
 myTxt = myTxt + getDate();
 myVar.innerHTML = myTxt;
 
 
-alert("HERE IS A MESSAGE")
+
+
+//alert("HERE IS A MESSAGE")
 
 function alertTest() {
     alert("HERE IS ANOTHER MESSAGE")
 }
 
+function termsButton() {
+    hideMain();
+    showTermsOfService();
+}
+
+function loginUser() {
+    alert(message);
+    hideMain();
+    showLogin();
+}

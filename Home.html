@@ -13,155 +13,186 @@
   </head>
   <body>
 
-<!--Title Block NOT LOGGED ON-->
-<div id="title">
-    <h1>PointPerson</h1>
-    <p>Find services and learn from others</p>
-</div>
-<div id="unlogged">
-    <table>
-        <tr>
-            <th> Create Account</th>
-            <th>Log In</th>
-        </tr>
-        <tr>
-            <td> Social News Feed</td>
-        </tr>
-    </table>
-</div>
+    <!--Title Block NOT LOGGED ON-->
+    <div id="title">
+        <h1>PointPerson</h1>
+        <p>Find services and learn from others</p>
+    </div>
+    <div id="unlogged">
+        <table>
+            <tr>
+                <th> Create Account</th>
+                <th><a href="/LogIn.html">Log In</a></th>
+            </tr>
+            <tr>
+                <td> Social News Feed</td>
+            </tr>
+        </table>
+    </div>
 
 
-<!-- Nav Bar Selections-->
-<!-- Used https://getbootstrap.com/docs/4.0/components/navbar/ as guidance for Navbar -->
-<nav id ="selectNav" class="navbar navbar-expand-lg">
-    <ul class="navbar-nav">
-        <li class="nav-item">
-            <a class="nav-link"> <!--href="TODO"-->Education and Career</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link"> <!--href="TODO"-->Business</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link"> <!--href="TODO"-->Technology</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link"> <!--href="TODO"-->Home/Auto Repairs</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link"> <!--href="TODO"-->Lifestyle</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link"> <!--href="TODO"-->Taxes</a>
-        </li>
-    </ul>
-</nav>
+    <!-- Nav Bar Selections-->
+    <!-- Used https://getbootstrap.com/docs/4.0/components/navbar/ as guidance for Navbar -->
+    <nav id ="selectNav" class="navbar navbar-expand-lg">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link"> <!--href="TODO"-->Education and Career</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link"> <!--href="TODO"-->Business</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link"> <!--href="TODO"-->Technology</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link"> <!--href="TODO"-->Home/Auto Repairs</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link"> <!--href="TODO"-->Lifestyle</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link"> <!--href="TODO"-->Taxes</a>
+            </li>
+        </ul>
+    </nav>
 
-<!-- Main Site section, this section will change depending on what user is selecting-->
-<div id ="main" class="container-fluid">
+    <!-- Main Site section, this section will change depending on what user is selecting-->
+    <div id="main" class="container-fluid">
 
 
-    <form>
-        <input type="text" id="userSearch" value="What are you looking for?" />
-    </form>
-    <button onclick="userSearch()">GO</button>
-    <div id="TOS" >
+        <form>
+            <input type="text" id="userSearch" value="What are you looking for?" />
+        </form>
+        <button onclick="userSearch()">GO</button>
+        <div id="TOS">
             Here is some text
-    </div>
-    <div id="EC" >
+        </div>
+        <div id="EC">
             Here is some text2
-</div>
-    <div id="WhatsaPointPerson" >
+        </div>
+        <div id="WhatsaPointPerson">
             Here is some text3
-    </div>
-    <div id="HowtobeaPointPerson" >
+        </div>
+        <div id="HowtobeaPointPerson">
             Here is some text4
-    </div>
+        </div>
 
-    <div id="Business" >
+        <div id="Business">
             Here is some text5
-    </div>
-    <div id="Whatsthepoint" >
+        </div>
+        <div id="Whatsthepoint">
             Here is some text6
-    </div>
-    <div id="BuyingSellingServices" >
+        </div>
+        <div id="BuyingSellingServices">
             Here is some text7
-    </div>
-    <div id="Technology" >
+        </div>
+        <div id="Technology">
             Here is some text8
-    </div>
-    <div id="PrivacyPolicy" >
+        </div>
+        <div id="PrivacyPolicy">
             Here is some text9
-    </div>
+        </div>
 
-    <div id="HomeAutoRepairs" >
+        <div id="HomeAutoRepairs">
             Here is some text10
-    </div>
-    <div id="Lifestyle" >
+        </div>
+        <div id="Lifestyle">
             Here is some text11
-    </div>
-    <div id="FeaturedPointPersonoftheWeek" >
+        </div>
+        <div id="FeaturedPointPersonoftheWeek">
             Here is some text12
-    </div>
-    <div id="Taxes" >
+        </div>
+        <div id="Taxes">
             Here is some text13
-</div>
+        </div>
 
-<textarea id="myText">
-  Lorem ipsum...
-</textarea>
-</div>
+
+
+        <textarea id="myText">
+            Lorem ipsum...
+        </textarea>
+        <form id="login">
+            <fieldset>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>Create Account</th>
+                        </tr>
+                        <tr><td><input type="text">Enter Your Email</td></tr>
+                        <tr><td><input type="text">Choose Username</td></tr>
+                        <tr><td><input type="text">Choose a Password</td></tr>
+                        <tr><td><input type="text">Confirm Password</td></tr>
+                    </tbody>
+                </table>
+            </fieldset>
+        </form>
+    </div>
+    <div id="termsOfService" style="hidden">
+        Here are the terms of service
+        Blablablablab
+        Blalbalbla
+        Blablabla
+        blablabla
+        balblabla
+        'blablab
+        albalb
+        ablablabl
+        '
+
+    </div>
+
 
 
 <!-- Bottom Navigation, done as a table -->
-<div id= "botNav">
+    <div id= "botNav">
 
-    <table>
-        <tr>
-            <th>Categories</th>
-            <th>About</th>
-            <th>Support/Contact Us</th>
-            <th>Follow Us</th>
-        </tr>
-        <tr>
-          <td><button  onclick="showEC()">Education & Career</button></td>
-          <td><button style="background-color:rgb(64,64,64); border-color:rgb(64,64,64);color:white; border: none;" onclick="showWhatsaPointPerson()">What's a PointPerson</button></td>
-          <td><button style="background-color:rgb(64,64,64); border-color:rgb(64,64,64);color:white; border: none;" onclick="showHowtobeaPointPerson()">How to be a PointPerson?</button></td>
-          <td><button style="background-color:rgb(64,64,64); border-color:rgb(64,64,64);color:white; border: none;" onclick="showTwitter()">Twitter</button></td>
-        </tr>
-        <tr>
-          <td><button style="background-color:rgb(64,64,64); border-color:rgb(64,64,64);color:white; border: none;" onclick="showBusiness()">Business</button></td>
-          <td><button style="background-color:rgb(64,64,64); border-color:rgb(64,64,64);color:white; border: none;" onclick="showWhatsthepoint()">What's the point?</button></td>
-          <td><button style="background-color:rgb(64,64,64); border-color:rgb(64,64,64);color:white; border: none;" onclick="showBuyingSellingServices()">Buying/Selling Services</button></td>
-          <td><button style="background-color:rgb(64,64,64); border-color:rgb(64,64,64);color:white; border: none;" onclick="showFacebook()">Facebook</button></td>
-        </tr>
-        <tr>
-          <td><button  onclick="showTechnology()">Technology</button></td>
-          <td><button style="background-color:rgb(64,64,64); border-color:rgb(64,64,64);color:white; border: none;" onclick="showPrivacyPolicy()">Privacy Policy</button></td>
-          <td><button style="background-color:rgb(64,64,64); border-color:rgb(64,64,64);color:white; border: none;" onclick="EmailUs(); return false">Send</button>Email Us</td>
-          <td><button style="background-color:rgb(64,64,64); border-color:rgb(64,64,64);color:white; border: none;" onclick="showInstagram()">Instagram</button></td>
-        </tr>
-        <tr>
-          <td><button style="background-color:rgb(64,64,64); border-color:rgb(64,64,64);color:white; border: none;" onclick="showHomeAutoRepairs()">Home/Auto Repairs</button></td>
-          <td><button style="background-color:rgb(64,64,64); border-color:rgb(64,64,64);color:white; border: none;" onclick="showTOS()">Terms of Service</button></td>
-          <td><button style="background-color:rgb(64,64,64); border-color:rgb(64,64,64);color:white; border: none;" onclick="showHelpPointPersoncom()">Help@PointPerson.com</button></td>
-        </tr>
-        <tr>
-          <td><button style="background-color:rgb(64,64,64); border-color:rgb(64,64,64);color:white; border: none;" onclick="showLifestyle()">Lifestyle</button></td>
-          <td><button style="background-color:rgb(64,64,64); border-color:rgb(64,64,64);color:white; border: none;" onclick="showFeaturedPointPersonoftheWeek()">Featured PointPerson of the Week</button></td> <!-- Should we put this somewhere else?-->
-        </tr>
-        <tr>
-          <td><button style="background-color:rgb(64,64,64); border-color:rgb(64,64,64);color:white; border: none;" onclick="showTaxes()">Taxes</button></td>
-          <td> </td>
-          <td><button onclick="alertTest()"> CLICK ME</button> </td>
-          <td id="pointDate"> PointPerson.com  </td>
-        </tr>
-
-
-    </table>
+        <table>
+            <tr>
+                <th>Categories</th>
+                <th>About</th>
+                <th>Support/Contact Us</th>
+                <th>Follow Us</th>
+            </tr>
+            <tr>
+              <td><button  onclick="showEC()">Education & Career</button></td>
+              <td><button style="background-color:rgb(64,64,64); border-color:rgb(64,64,64);color:white; border: none;" onclick="showWhatsaPointPerson()">What's a PointPerson</button></td>
+              <td><button style="background-color:rgb(64,64,64); border-color:rgb(64,64,64);color:white; border: none;" onclick="showHowtobeaPointPerson()">How to be a PointPerson?</button></td>
+              <td><button style="background-color:rgb(64,64,64); border-color:rgb(64,64,64);color:white; border: none;" onclick="showTwitter()">Twitter</button></td>
+            </tr>
+            <tr>
+              <td><button style="background-color:rgb(64,64,64); border-color:rgb(64,64,64);color:white; border: none;" onclick="showBusiness()">Business</button></td>
+              <td><button style="background-color:rgb(64,64,64); border-color:rgb(64,64,64);color:white; border: none;" onclick="showWhatsthepoint()">What's the point?</button></td>
+              <td><button style="background-color:rgb(64,64,64); border-color:rgb(64,64,64);color:white; border: none;" onclick="showBuyingSellingServices()">Buying/Selling Services</button></td>
+              <td><button style="background-color:rgb(64,64,64); border-color:rgb(64,64,64);color:white; border: none;" onclick="showFacebook()">Facebook</button></td>
+            </tr>
+            <tr>
+              <td><button  onclick="showTechnology()">Technology</button></td>
+              <td><button style="background-color:rgb(64,64,64); border-color:rgb(64,64,64);color:white; border: none;" onclick="showPrivacyPolicy()">Privacy Policy</button></td>
+              <td><button style="background-color:rgb(64,64,64); border-color:rgb(64,64,64);color:white; border: none;" onclick="EmailUs(); return false">Send</button>Email Us</td>
+              <td><button style="background-color:rgb(64,64,64); border-color:rgb(64,64,64);color:white; border: none;" onclick="showInstagram()">Instagram</button></td>
+            </tr>
+            <tr>
+              <td><button style="background-color:rgb(64,64,64); border-color:rgb(64,64,64);color:white; border: none;" onclick="showHomeAutoRepairs()">Home/Auto Repairs</button></td>
+              <td><button style="background-color:rgb(64,64,64); border-color:rgb(64,64,64);color:white; border: none;" onclick="termsButton()">Terms of Service</button></td>
+              <td><button style="background-color:rgb(64,64,64); border-color:rgb(64,64,64);color:white; border: none;" onclick="showHelpPointPersoncom()">Help@PointPerson.com</button></td>
+            </tr>
+            <tr>
+              <td><button style="background-color:rgb(64,64,64); border-color:rgb(64,64,64);color:white; border: none;" onclick="showLifestyle()">Lifestyle</button></td>
+              <td><button style="background-color:rgb(64,64,64); border-color:rgb(64,64,64);color:white; border: none;" onclick="showFeaturedPointPersonoftheWeek()">Featured PointPerson of the Week</button></td> <!-- Should we put this somewhere else?-->
+            </tr>
+            <tr>
+              <td><button style="background-color:rgb(64,64,64); border-color:rgb(64,64,64);color:white; border: none;" onclick="showTaxes()">Taxes</button></td>
+              <td> </td>
+              <td> </td>
+              <td id="pointDate"> PointPerson.com  </td>
+            </tr>
 
 
+        </table>
 
-</div>
+
+
+    </div>
 
 
 
