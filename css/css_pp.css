@@ -1,11 +1,12 @@
-#title {
+div.title {
   text-align: left;
   background-color: black;
   position: static;
   width: 50%;
   height: 100px;
   display: inline-block;
-  color: rgb(51,153,255)
+  color: rgb(51,153,255);
+  padding-left: 20px;
 }
 #unlogged {
     text-align: left;
@@ -16,13 +17,24 @@
     bottom: 100px;
     width: 50%;
     height: 100px;
-
-
+  
+}
+/*This is for the text to align right for Create Account Log In*/
+#TopRight {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    width: 200px;
+    font-size: 18px;
 }
 #selectNav{
     position:relative;
     bottom:100px;
-}
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  
+    }
 a:hover,a:visited {
   color: black;
 }
@@ -40,6 +52,28 @@ button {
     border-color: rgb(64,64,64);
     color: white;
     border: none;
+    transition-duration: 0.4s;
+    border-radius:4px;
+    outline:none;
+}
+button:hover{
+    background-color: white;
+    color: black;
+
+}
+button.navButton {
+    background-color: rgb(255,255,255);
+    border-color: rgb(255,255,255);
+    color: rgb(0,0,128);
+    border: none;
+    transition-duration: 0.4s;
+    border-radius: 4px;
+}
+
+button.navButton:hover {
+    background-color: blue;
+    color: white;
+
 }
 
 #main {
@@ -58,4 +92,11 @@ button {
 #TOS {
 
     background-color: rgb(192, 192, 192)
+}
+
+#botTableNavBar {
+
+    table-layout: auto;
+    width: 100%;
+    font-size: medium;
 }

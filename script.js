@@ -73,7 +73,7 @@ function showPrivacyPolicy(){
       x.style.display = "none";
   }
 }
-function EmailUs(){
+function emailUs(){
   var link = "mailto:me@example.com"
   + "?cc=myCCaddress@example.com"
   + "&subject=" + escape("This is my subject")
@@ -84,7 +84,7 @@ function showInstagram(){
   var x = document.getElementById("Instagram");
 window.open('https://www.instagram.com/point.person/?hl=en')
 }
-function showHomeAutoRepairs(){
+function showHomeAutoRepairs() {
   var x = document.getElementById("HomeAutoRepairs");
   if (x.style.display === "none") {
       x.style.display = "block";
@@ -112,8 +112,10 @@ function showLifestyle(){
   var x = document.getElementById("Lifestyle");
   if (x.style.display === "none") {
       x.style.display = "block";
+      exitTerms();
   } else {
       x.style.display = "none";
+      exitTerms();
   }
 }
 function showFeaturedPointPersonoftheweek(){
@@ -172,11 +174,24 @@ function showLogin() {
     log.style.display = "inline";
 }
 
+/*Source has to be ID of element*/
+/*Destination, has to be ID of element*/
+function moveToDestination(source, destination) {
+    var get = document.getElementById(source);
+    console.log(get.innerHTML);
+    var target = document.getElementById(destination);
+    console.log(target.innerHTML);
+    target.appendChild(get);
+}
+
 
 var myVar = document.getElementById("pointDate");
 var myTxt = myVar.innerHTML;
 myTxt = myTxt + getDate();
 myVar.innerHTML = myTxt;
+
+
+
 
 
 
@@ -190,6 +205,12 @@ function alertTest() {
 function termsButton() {
     hideMain();
     showTermsOfService();
+}
+
+function exitTerms() {
+    hideTermsOfService();
+    showMain();
+
 }
 
 function loginUser() {
