@@ -167,10 +167,11 @@ function hideLogin() {
     var log = document.getElementById("termsOfService");
     log.style.display = "none";
 }
-fucntion showLogin() {
+function showLogin() {
     var log = document.getElementById("termsOfService");
     log.style.display = "inline";
 }
+
 
 var myVar = document.getElementById("pointDate");
 var myTxt = myVar.innerHTML;
@@ -183,7 +184,7 @@ myVar.innerHTML = myTxt;
 //alert("HERE IS A MESSAGE")
 
 function alertTest() {
-    alert("HERE IS ANOTHER MESSAGE")
+    alert("HERE IS ANOTHER MESSAGE");
 }
 
 function termsButton() {
