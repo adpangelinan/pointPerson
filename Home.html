@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!-- Other CSS -->
-    <link rel="stylesheet" href ="css/css_pp.css">
+    <link rel="stylesheet" href ="css_pp.css">
     <title>Point Person</title>
   </head>
   <body>
@@ -23,14 +23,14 @@
           <table id="TopRight">
               <tr>
                   <th> Create Account </th> <!--TODO Create Account Page-->
-                  <th><a style="color:rgb(51,153,255)" ; href="LogIn.html">Log In</a></th>
-              </tr>
-              <tr> 
-                  <td style="color:black";>  Hello  </td>
+                  <th><a style="color:white" ; href="LogIn.html">Log In</a></th>
               </tr>
               <tr>
-                  
-                 
+                  <td style="color:rgb(28,18,18)";>  Hello  </td>
+              </tr>
+              <tr>
+
+
               </tr>
           </table>
       </div>
@@ -38,38 +38,25 @@
 
       <!-- Nav Bar Selections-->
       <!-- Used https://getbootstrap.com/docs/4.0/components/navbar/ as guidance for Navbar -->
-      <nav id="selectNav" class="navbar navbar-expand-lg">
-          <ul class="navbar-nav">
-              <li class="nav-item">
-                  <button class="navButton" onclick="showEC()"> Education and Career</button>
-              </li>
-              <li class="nav-item">
-                  <button class="navButton" onclick="showBusiness()">Business</button>
-              </li>
-              <li class="nav-item">
-                  <button class="navButton" onclick="showTechnology()">Technology</button>
-              </li>
-              <li class="nav-item">
-                  <button class="navButton" onclick="showHomeAutoRepairs()">Home/Auto Repairs</>
-              </li>
-              <li class="nav-item">
-                  <button class="navButton" onclick="showLifestyle()">Lifestyle</>
-              </li>
-              <li class="nav-item">
-                  <button class="navButton" onclick="showTaxes()">Taxes</button>
-              </li>
+      <nav class="selectNav">
+          <ul>
+              <li><button class="navButton" onclick="showEC()">Education and Career</button></li>
+              <li><button class="navButton" onclick="showBusiness()">Business</button></li>
+              <li><button class="navButton" onclick="showTechnology()">Technology</button></li>
+              <li><button class="navButton" onclick="showHomeAutoRepairs()">Home/Auto Repairs</button></li>
+              <li><button class="navButton" onclick="showLifestyle()">Lifestyle</button></li>
+              <li><button class="navButton" onclick="showTaxes()">Taxes</button></li>
           </ul>
       </nav>
 
+
       <!-- Main Site section, this section will change depending on what user is selecting-->
       <div id="main" class="container-fluid">
-
-
           <div id="searchBar">
-              <form>
+              <form class = "searchForm">
                   <input type="text" id="userSearch" value="What are you looking for?" />
               </form>
-              <button onclick="userSearch()">GO</button>
+              <button class="searchButton" onclick="userSearch()">GO</button>
           </div>
 
           <div id="TOS">
@@ -146,7 +133,7 @@
           albalb
           ablablabl
           '
-     
+
 
       </div>
 
