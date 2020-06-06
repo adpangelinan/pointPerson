@@ -1,23 +1,24 @@
 div.title {
   text-align: left;
-  background-color: black;
+  background-color: rgb(28,18,18);
   position: static;
   width: 50%;
   height: 100px;
   display: inline-block;
-  color: rgb(51,153,255);
+  color: white;
   padding-left: 20px;
+  font-size: 18px;
 }
 #unlogged {
     text-align: left;
-    background-color: black;
-    color: rgb(51,153,255);
+    background-color: rgb(28,18,18);
+    color: white;
     position: relative;
     left: 50%;
     bottom: 100px;
     width: 50%;
     height: 100px;
-  
+
 }
 /*This is for the text to align right for Create Account Log In*/
 #TopRight {
@@ -25,16 +26,19 @@ div.title {
     top: 8px;
     right: 16px;
     width: 200px;
-    font-size: 18px;
+    font-size: 20px;
+    padding-right:200px;
 }
-#selectNav{
-    position:relative;
-    bottom:100px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-  
-    }
+
+  ul, li{ list-style:none; margin:0; padding:0; top:0; font-size:20px;}/*1.1*/
+.selectNav ul{background-color:white;} /*1.2*/
+.selectNav a{color:white; display:block; padding:30px; text-decoration:none;top:0px} /*1.2, 1.3*/
+.selectNav a:hover{background -color:#333333; text-decoration:none; color:white;}/*1.2*/
+.selectNav > ul{ display:table; width:100%;margin-top:-100px;}  /*2.1, 2.2*/
+.selectNav > ul > li{ display:table-cell; border-right:none;}  /*3.1, 3.2 */
+.selectNav > ul > li:last-child{ border-right:none;}/*3.2*/
+.selectNav > ul > li > a{ text-align:center;}/*2*/
+
 a:hover,a:visited {
   color: black;
 }
@@ -48,8 +52,8 @@ body {
 }
 
 button {
-    background-color: rgb(64,64,64);
-    border-color: rgb(64,64,64);
+    background-color: rgb(28,18,18);
+    border-color: rgb(28,18,18);
     color: white;
     border: none;
     transition-duration: 0.4s;
@@ -78,11 +82,15 @@ button.navButton:hover {
 
 #main {
     padding-bottom: 200px; /*ensure nothing drops below bottom nav*/
+    text-align: center;
+    display:inline-block;
+    font-size: large;
+
 }
 #botNav {
     position: fixed;
     bottom: 0;
-    background-color: rgb(64,64,64);
+    background-color: rgb(28,18,18);
     color: white;
     width: 100%;
     height: 200px;
