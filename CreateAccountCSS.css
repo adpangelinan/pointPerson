@@ -1,0 +1,171 @@
+div.title {
+  text-align: left;
+  background-color: rgb(2,1,11);
+  position: fixed;
+  width: 100%;
+  height: 10%;
+  display: inline-block;
+  color: white;
+  padding-left: 0.5%;
+  font-size: 120%;
+  font-family:"Futura Medium";
+  left: 0%;
+  bottom: 91%;
+  width: 100%;
+  }
+#TopRight{
+  position: relative;
+  top: -122%;
+  right: -23%;
+  height: 100%;
+  font-size: 100%;
+  width: 78%;
+  }
+  ul, li{ list-style:none; margin:0%; padding-left:0.3%; padding-top:5.9%; font-size:110%;}
+.selectNav ul{background-color:white;}
+.selectNav a{color:white; display:block; text-decoration:none;top:0%}
+.selectNav a:hover{background -color:#333333; text-decoration:none; color:white;}
+.selectNav > ul{ display:table; width:100%;margin-top:-7%;}
+.selectNav > ul > li{ display:table-cell; border-right:none;}
+.selectNav > ul > li:last-child{ border-right:none;}
+.selectNav > ul > li > a{ text-align:center;}
+
+a:hover,a:visited {
+  color: black;
+}
+a.nav-item {
+  color: black;
+}
+button.logo{
+padding-left: 0.2%;
+padding-top:0.3%;
+height:67%;
+width:0%;
+outline:none;
+border:none;
+}
+button.logo:hover{
+  background-color: rgb(28,18,18)
+}
+img{
+  height:100%;
+  width:-100%;
+  padding-left:-100%;
+}
+/*this expands the top navigation bar selectNav */
+body {
+  background-color: white;
+  color: black;
+  font-family: "Futura Medium";
+}
+button {
+    background-color: rgb(2,1,11);
+    border-color: rgb(28,18,18);
+    color: white;
+    border: none;
+    transition-duration: 0.4s;
+    border-radius:0.5%;
+    outline:none;
+}
+button:hover{
+    background-color: white;
+    color: black;
+}
+button.navButton {
+    background-color: rgb(255,255,255);
+    border-color: rgb(255,255,255);
+    color: rgb(0,0,128);
+    border: none;
+    transition-duration: 0.4s;
+    border-radius: 0.5%;
+}
+
+button.navButton:hover {
+    background-color: blue;
+    color: white;
+}
+#main {
+    padding-top: 30px;
+    padding-right: 100px;
+    padding-left: 100px;
+    text-align: center;
+    font-family: "Futura Medium";
+    font-size: 40px;
+    width: 100%;
+    }
+input.top{
+  width:80%;
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius:10px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius:0px;
+  outline: none;
+  border-width: 0%;
+  border-color:black;
+  height: 40%;
+  font-family: "Futura Medium";
+  font-weight: bold;
+}
+input.submit{
+  width:40%;
+  background-color: rgb(255,159,17);
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius:10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius:10px;
+  outline: none;
+  color: black;
+  font-size: 35px;
+}
+input{
+    width:40%;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius:10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius:10px;
+    outline: none;
+    border-color:black;
+    font-family: "Futura Medium";
+
+  }
+button.searchButtonTop{
+  background-color: rgb(85,142,213);
+  color: black;
+  font-family: "Futura Medium";
+  width: 12%;
+  border-color: black;
+  border-style: solid;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  outline: none;
+  height: 42%;
+  border-color:black;
+}
+#botNav {
+    position: fixed;
+    padding-left: 2%;
+    bottom: 0%;
+    background-color: rgb(2,1,11);
+    color: white;
+    width: 105%;
+    height: 22%;
+
+}
+table.loginTable{
+width: 100%;
+}
+
+#TOS {
+
+    background-color: rgb(192, 192, 192)
+}
+
+#botTableNavBar {
+    padding-left: 2%;
+    table-layout: auto;
+    width: 105%;
+    font-size: 15px;
+}

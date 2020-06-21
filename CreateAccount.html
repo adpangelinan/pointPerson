@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Other CSS -->
+    <link rel="stylesheet" href ="CreateAccountCSS.css">
+    <title>Point Person</title>
+  </head>
+  <body>
+
+      <!--Title Block NOT LOGGED ON-->
+      <div class="title">
+          <button class="logo"onclick="goHome()"> <img src="pointpersonlogo3.jpg"> </button>
+          <p><a style="color:rgb(205,230,255)";> Find services and learn from others </a><p>
+              <table id="TopRight">
+                    <tr>
+                        <th style="width:60%"; style="padding-left:10%"; <div id="searchBar">
+                          <table id="searchRow">
+                            <tr>
+                            <form class = "searchForm">
+                                <input class = "top" type="searchText" id="userSearch" value="What are you looking for?" />
+                            </form>
+                            <button class="searchButtonTop" onclick="userSearch()">GO</button>
+                          </tr>
+                        </table>   </th>
+                        <th style="width:10%";><a style="color:rgb(85,142,213)"; href= "CreateAccount.html">Create Account</a> </th>
+                        <th style="width:5%";><a style="color:rgb(85,142,213)"; href="Log_In.html">Log In</a></th>
+                    </tr>
+                    </table>
+          </div>
+
+          <nav class="selectNav">
+          <ul>
+              <li><button class="navButton" onclick="showEC()">Education & Career</button></li>
+              <li><button class="navButton" onclick="showHomeAuto()">Home & Auto</button></li>
+              <li><button class="navButton" onclick="showTechnologyProgramming()">Technology & Programming</button></li>
+  <li><button class="navButton" onclick="showFinancial()">Financial & Investing</button></li>
+              <li><button class="navButton" onclick="showLifestyle()">Lifestyle & Health</button></li>
+              <li><button class="navButton" onclick="showBusiness()">Business</button></li>
+          </ul>
+      </nav>
+
+
+      <!-- Main Site section, this section will change depending on what user is selecting-->
+      <div id="main" class="container-fluid">
+        <form id="login">
+            <fieldset>
+                <table class="loginTable">
+                    <tbody>
+                        <tr>
+                            <th>Create Account</th>
+                        </tr>
+                        <tr width: 100px;><td><input type="text" value="Enter your Email"/></td></tr>
+                        <tr><td><input type="text" value="Choose Username"/></td></tr>
+                        <tr width: 100px;><td><input type="text" value="Choose a Password"/></td></tr>
+                        <tr><td><input type="text" value="Confirm Password"/></td></tr>
+                        <tr><td><input class="submit" type="submit" value="Join"/>
+                        <tr>
+                              <th font-size: 10px;> By joining, you agree to PointPerson's Terms of Service, as well as to receive emails from us.</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </fieldset>
+        </form>
+        <div id="EC">
+            Education Career
+        </div>
+        <div id="Financial">
+            Financial
+        </div>
+        <div id="HomeAuto">
+            Home & Auto
+        </div>
+        <div id="Lifestyle">
+            Lifestyle & Health
+        </div>
+        <div id="LegalAdvice">
+            Legal
+        </div>
+        <div id="showMarketing">
+            Marketing
+        </div>
+        <div id="Crafting">
+            Crafting
+        </div>
+        <div id="Business">
+            Business
+        </div>
+        <div id="Sports">
+            Sports
+        </div>
+        <div id="Taxes">
+            Taxes
+        </div>
+        <div id="showTechnologyProgramming">
+            Tech Programming
+        </div>
+        <div id="PrivacyPolicy">
+            Privacy Policy:
+            PointPerson.com will not share or sell personal information with any other entities.
+        </div>
+        <div id="FeaturedPointPersonoftheMonth">
+            FeaturedPointPerson
+        </div>
+        <div id="MusicArts">
+            Music & Arts
+        </div>
+        <div id="UsingPointPerson">
+            UsingPointPerson
+        </div>
+
+        </div>
+        <div id="termsOfService" style="hidden">
+        Here are the terms of service
+        The rules are.....
+        </div>
+
+      </div>
+
+      <!-- Bottom Navigation, done as a table -->
+      <div id="botNav">
+
+          <table id="botTableNavBar">
+              <tr>
+                  <th>Categories</th>
+                  <th>More</th>
+                  <th>About</th>
+                  <th>Follow Us</th>
+              </tr>
+              <tr>
+                  <td><button onclick="showEC()">Education & Career</button></td>
+                  <td><button onclick="showMarketing()">Marketing</button></td>
+                  <td><button onclick="showUsingPointPerson()">Using PointPerson.com</button></td>
+                  <td><button onclick="showTwitter()">Twitter</button></td>
+              </tr>
+              <tr>
+                  <td><button onclick="showFinancial()">Financial & Investing</button></td>
+                  <td><button onclick="showSports()">Sports</button></td>
+                  <td><button onclick="termsButton()">Terms of Service</button></td>
+                  <td><button onclick="showFacebook()">Facebook</button></td>
+              </tr>
+              <tr>
+                  <td><button onclick="showHomeAuto()">Home & Auto</button></td>
+                  <td><button onclick="showTechnologyProgramming()">Technology & Programing</button></td>
+                  <td><button onclick="showPrivacyPolicy()">Privacy Policy</button></td>
+                  <td><button onclick="showInstagram()">Instagram</button></td>
+              </tr>
+              <tr>
+                  <td><button onclick="showLifestyle()">Lifestyle & Health</button></td>
+                  <td><button onclick="showTaxes()">Taxes</button></td>
+                  <td><button onclick="emailUs()">Email Us Help@PointPerson.com</button></td>
+              </tr>
+              <tr>
+                  <td><button onclick="showLegalAdvice()">Legal Advice</button></td>
+                  <td><button onclick="showBusiness()">Business</button></td>
+                  <td><button onclick="showFeaturedPointPersonoftheMonth()">Featured PointPerson of the Month</button></td>
+                  <td id="pointDate"> PointPerson.com  </td>
+              </tr>
+              <tr>
+                <td><button onclick = "showMusicArts()">Music & Arts</button></td>
+                <td><button onclick = "showCrafting()">Crafting</button></td>
+              </tr>
+            </table>
+
+
+
+      </div>
+
+
+
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+      <script src="script.js"></script>
+  </body>
+
+</html>
