@@ -1,6 +1,5 @@
 // JavaScript source code
 document.getElementById("userSearch").value="What are you looking for?"
-
 function showEC(){
   var x = document.getElementById("EC");
   if (x.style.display === "none") {
@@ -9,16 +8,16 @@ function showEC(){
       x.style.display = "none";
   }
 }
-function showWhatsaPointPerson(){
-  var x = document.getElementById("WhatsaPointPerson");
+function showMarketing(){
+  var x = document.getElementById("showMarketing");
   if (x.style.display === "none") {
       x.style.display = "block";
   } else {
       x.style.display = "none";
   }
 }
-function showHowtobeaPointPerson(){
-  var x = document.getElementById("HowtobeaPointPerson");
+function showFinancial(){
+  var x = document.getElementById("Financial");
   if (x.style.display === "none") {
       x.style.display = "block";
   } else {
@@ -37,16 +36,16 @@ function showBusiness(){
       x.style.display = "none";
   }
 }
-function showWhatsthepoint(){
-  var x = document.getElementById("Whatsthepoint");
+function showCrafting(){
+  var x = document.getElementById("Crafting");
   if (x.style.display === "none") {
       x.style.display = "block";
   } else {
       x.style.display = "none";
   }
 }
-function showBuyingSellingServices(){
-  var x = document.getElementById("BuyingSellingServices");
+function showUsingPointPerson(){
+  var x = document.getElementById("UsingPointPerson");
   if (x.style.display === "none") {
       x.style.display = "block";
   } else {
@@ -57,8 +56,8 @@ function showFacebook(){
   var x = document.getElementById("Facebook");
   window.open('https://www.facebook.com/PointPersonPage/?eid=ARBhkE7sy6LPuQ1gSE6IGjjrv4ZCUfELGOKzYMJe0QDmMezX-knJvUTZ8voxhO9YqBI3GBGywHvIlu-2')
 }
-function showTechnology(){
-  var x = document.getElementById("Technology");
+function showTechnologyProgramming(){
+  var x = document.getElementById("showTechnologyProgramming");
   if (x.style.display === "none") {
       x.style.display = "block";
   } else {
@@ -74,34 +73,38 @@ function showPrivacyPolicy(){
   }
 }
 function emailUs(){
-  var link = "mailto:me@example.com"
-  + "?cc=myCCaddress@example.com"
-  + "&subject=" + escape("This is my subject")
-  + "&body=" + escape(document.getElementbyID('myText').value);
-  window.location.href=link;
+  window.location="EmailUs.html"
 }
 function showInstagram(){
   var x = document.getElementById("Instagram");
 window.open('https://www.instagram.com/point.person/?hl=en')
 }
-function showHomeAutoRepairs() {
-  var x = document.getElementById("HomeAutoRepairs");
+function showHomeAuto() {
+  var x = document.getElementById("HomeAuto");
   if (x.style.display === "none") {
       x.style.display = "block";
   } else {
       x.style.display = "none";
   }
 }
-function showTOS() {
-    var x = document.getElementById("TOS");
+function showLegalAdvice() {
+  var x = document.getElementById("LegalAdvice");
+  if (x.style.display === "none") {
+      x.style.display = "block";
+  } else {
+      x.style.display = "none";
+  }
+}
+function showMusicArts() {
+    var x = document.getElementById("MusicArts");
     if (x.style.display === "none") {
         x.style.display = "block";
     } else {
         x.style.display = "none";
     }
 }
-function showHelpPointPersoncom(){
-  var x = document.getElementById("HelpPointPersoncom");
+function showSports(){
+  var x = document.getElementById("Sports");
   if (x.style.display === "none") {
       x.style.display = "block";
   } else {
@@ -118,8 +121,8 @@ function showLifestyle(){
       exitTerms();
   }
 }
-function showFeaturedPointPersonoftheweek(){
-  var x = document.getElementById("FeaturedPointPersonoftheWeek");
+function showFeaturedPointPersonoftheMonth(){
+  var x = document.getElementById("FeaturedPointPersonoftheMonth");
   if (x.style.display === "none") {
       x.style.display = "block";
   } else {
@@ -144,18 +147,14 @@ function getDate() {
 
     var myDate = new Date()
     return myDate.getFullYear()
-
 }
-
 function hideMain() {
     var mainDiv = document.getElementById("main");
     mainDiv.style.display = "none";
-
 }
 function showMain() {
     var mainDiv = document.getElementById("main");
     mainDiv.style.display = "inline";
-
 }
 function hideTermsOfService() {
     var tOSDIV = document.getElementById("termsOfService");
@@ -183,38 +182,26 @@ function moveToDestination(source, destination) {
     console.log(target.innerHTML);
     target.appendChild(get);
 }
-
-
 var myVar = document.getElementById("pointDate");
 var myTxt = myVar.innerHTML;
 myTxt = myTxt + getDate();
 myVar.innerHTML = myTxt;
 
 
-
-
-
-
-
-//alert("HERE IS A MESSAGE")
-
-function alertTest() {
-    alert("HERE IS ANOTHER MESSAGE");
-}
-
 function termsButton() {
+    window.location="TextPage.html";
     hideMain();
     showTermsOfService();
 }
-
 function exitTerms() {
     hideTermsOfService();
     showMain();
-
 }
-
 function loginUser() {
     alert(message);
     hideMain();
     showLogin();
+}
+function goHome(){
+window.location="Home.html"
 }

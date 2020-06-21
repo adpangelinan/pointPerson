@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Other CSS -->
+    <link rel="stylesheet" href ="HomePageCSS.css">
+    <title>Point Person</title>
+  </head>
+  <body>
+
+      <!--Title Block NOT LOGGED ON-->
+      <div class="title">
+          <h1><button onclick="goHome()">PointPerson</button></h1>
+          <p>Find services and learn from others</p>
+      </div>
+
+      <div id="unlogged">
+          <table id="TopRight">
+              <tr>
+                  <th> Create Account </th> <!--TODO Create Account Page-->
+                  <th><a style="color:white" ; href="LogIn.html">Log In</a></th>
+              </tr>
+              <tr>
+                  <td style="color:rgb(28,18,18)";>  Hello  </td>
+              </tr>
+              <tr>
+
+
+              </tr>
+          </table>
+      </div>
+
+          <nav class="selectNav">
+          <ul>
+              <li><button class="navButton" onclick="showEC()">Education and Career</button></li>
+              <li><button class="navButton" onclick="showBusiness()">Business</button></li>
+              <li><button class="navButton" onclick="showTechnology()">Technology</button></li>
+              <li><button class="navButton" onclick="showHomeAutoRepairs()">Home/Auto Repairs</button></li>
+              <li><button class="navButton" onclick="showLifestyle()">Lifestyle</button></li>
+              <li><button class="navButton" onclick="showTaxes()">Taxes</button></li>
+          </ul>
+      </nav>
+
+
+      <!-- Main Site section, this section will change depending on what user is selecting-->
+      <div id="main" class="container-fluid">
+          <div id="searchBar">
+            <table id="searchRow">
+              <tr>
+              <form class = "searchForm">
+                  <input type="text" id="userSearch" value="What are you looking for?" />
+              </form>
+              <button class="searchButton" onclick="userSearch()">GO</button>
+            </tr>
+          </table>
+          </div>
+
+          <div id="TOS">
+              Here is some text
+          </div>
+          <div id="EC">
+              Here is some text2
+          </div>
+          <div id="WhatsaPointPerson">
+              Here is some text3
+          </div>
+          <div id="HowtobeaPointPerson">
+              Here is some text4
+          </div>
+
+          <div id="Business">
+              Here is some text5
+          </div>
+          <div id="Whatsthepoint">
+              Here is some text6
+          </div>
+          <div id="BuyingSellingServices">
+              Here is some text7
+          </div>
+          <div id="Technology">
+              Here is some text8
+          </div>
+          <div id="PrivacyPolicy">
+              Here is some text9
+          </div>
+
+          <div id="HomeAutoRepairs">
+              Here is some text10
+          </div>
+          <div id="Lifestyle">
+              Here is some text11
+          </div>
+          <div id="FeaturedPointPersonoftheWeek">
+              Here is some text12
+          </div>
+          <div id="Taxes">
+              Here is some text13
+          </div>
+
+
+      </div>
+      <div id="termsOfService" style="hidden">
+          Here are the terms of service
+          Blablablablab
+          Blalbalbla
+          Blablabla
+          blablabla
+          balblabla
+          'blablab
+          albalb
+          ablablabl
+          '
+
+
+      </div>
+
+
+
+      <!-- Bottom Navigation, done as a table -->
+      <div id="botNav">
+
+          <table id="botTableNavBar">
+              <tr>
+                  <th>Categories</th>
+                  <th>About</th>
+                  <th>Support/Contact Us</th>
+                  <th>Follow Us</th>
+              </tr>
+              <tr>
+                  <td><button onclick="showEC()">Education & Career</button></td>
+                  <td><button onclick="showWhatsaPointPerson()">What's a PointPerson</button></td>
+                  <td><button onclick="showHowtobeaPointPerson()">How to be a PointPerson?</button></td>
+                  <td><button onclick="showTwitter()">Twitter</button></td>
+              </tr>
+              <tr>
+                  <td><button onclick="showBusiness()">Business</button></td>
+                  <td><button onclick="showWhatsthepoint()">What's the point?</button></td>
+                  <td><button onclick="showBuyingSellingServices()">Buying/Selling Services</button></td>
+                  <td><button onclick="showFacebook()">Facebook</button></td>
+              </tr>
+              <tr>
+                  <td><button onclick="showTechnology()">Technology</button></td>
+                  <td><button onclick="showPrivacyPolicy()">Privacy Policy</button></td>
+                  <td><button onclick="emailUs()">E-mail Us</button></td>
+                  <td><button onclick="showInstagram()">Instagram</button></td>
+              </tr>
+              <tr>
+                  <td><button onclick="showHomeAutoRepairs()">Home/Auto Repairs</button></td>
+                  <td><button onclick="termsButton()">Terms of Service</button></td>
+                  <td><button onclick="showHelpPointPersoncom()">Help@PointPerson.com</button></td>
+              </tr>
+              <tr>
+                  <td><button onclick="showLifestyle()">Lifestyle</button></td>
+                  <td><button onclick="showFeaturedPointPersonoftheWeek()">Featured PointPerson of the Week</button></td> <!-- Should we put this somewhere else?-->
+                  <td> </td>
+                  <td id="pointDate"> PointPerson.com  </td>
+              </tr>
+              <tr>
+                  <td><button onclick="showTaxes()">Taxes</button></td>
+
+              </tr>
+
+
+          </table>
+
+
+
+      </div>
+
+
+
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+      <script src="script.js"></script>
+  </body>
+
+</html>
