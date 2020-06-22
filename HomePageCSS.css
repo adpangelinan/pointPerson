@@ -104,8 +104,8 @@ input.top{
 input{
     width:70%;
     text-align: center;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
     outline: none;
     border-width: 0%;
     border-color:black;
@@ -115,11 +115,11 @@ button.searchButton{
     background-color: rgb(255,159,17);
     color: black;
     font-family: "Futura Medium";
-    width: 13%;
+    width: 10%;
     border-color: black;
     border-style: solid;
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
     outline: none;
     height: 70px;
     border-color:black;
