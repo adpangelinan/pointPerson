@@ -89,7 +89,7 @@ button.navButton:hover {
     padding-top: 200px;
     padding-bottom: 75px; /*ensure nothing drops below bottom nav*/
     text-align: center;
-    font-size: 280%;
+    font-size: 200%;
     }
 input.top{
   width:80%;
@@ -109,7 +109,7 @@ input{
     outline: none;
     border-width: 0%;
     border-color:black;
-    height: 80px;
+    height: 70px;
 }
 button.searchButton{
     background-color: rgb(255,159,17);
@@ -121,7 +121,7 @@ button.searchButton{
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
     outline: none;
-    height: 80px;
+    height: 70px;
     border-color:black;
 }
 #botNav {
