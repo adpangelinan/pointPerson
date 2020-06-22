@@ -85,12 +85,12 @@ button.navButton:hover {
     color: white;
 }
 #main {
-    padding-top: 30px;
+    padding-top: 60px;
     padding-right: 100px;
     padding-left: 100px;
     text-align: center;
     font-family: "Futura Medium";
-    font-size: 40px;
+    font-size: 200%;
     width: 100%;
     }
 input.top{
