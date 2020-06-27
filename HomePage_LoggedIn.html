@@ -8,23 +8,44 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!-- Other CSS -->
-    <link rel="stylesheet" href ="HomePageCSS.css">
+    <link rel="stylesheet" href ="HomePage_LoggedIn.css">
     <title>Point Person</title>
   </head>
   <body>
 
       <!--Title Block NOT LOGGED ON-->
       <div class="title">
-          <button class="logo"onclick="goHome()"> <img src="pointperson4.jpg"> </button>
-          <p><a style="color:black";> Find services and learn from others </a><p>
+          <button class="logo"onclick="goHome()"> <img src="pointpersonlogo3.jpg"> </button>
+          <p><a style="color:rgb(205,230,255)";> Find services and learn from others </a><p>
+
               <table id="TopRight">
-                    <tr>
-                        <th style="width:10%";><a style="color:black"; href= "CreateAccount.html">Create Account</a> </th>
-                        <th style="width:5%";><a style="color:black"; href="Log_In.html">Log In</a></th>
+                <div id="searchBar">
+
+                        <th style="width:70%";>
+                          <table id="searchRow">
+                            <tr>
+                            <form class = "searchForm">
+                                <input class = "top" type="searchText" id="userSearch" value="What are you looking for?" />
+                            </form>
+                            <button class="searchButtonTop" onclick="userSearch()">GO</button>
+
+                          </tr>
+                          </div>
+                        </th>
+                        </table>
+                        <th style="width:6%";><button onclick="notifications()" style="color:rgb(85,142,213)";>Notifications</button></th>
+                        <th style="width:6%";><button onclick="messages()" style="color:rgb(85,142,213)";>Messages</button></th>
+                        <th style="width:6%";><button onclick="accountInfo()" style="color:rgb(85,142,213)";>Account</button></th>
+                        <th style="width:6%";><button onclick ="gotoProfile()" style="color:rgb(85,142,213)";>cirlce</button></th>
+                        <th style="width:1%";><button onclick ="logOut()" style="color:rgb(85,142,213)";>Log Out</button></th>
+
+
                     </tr>
                     </table>
           </div>
     </div>
+
+
           <nav class="selectNav">
           <ul>
               <li><button class="navButton" onclick="showEC()">Education & Career</button></li>
@@ -38,17 +59,30 @@
 
 
       <!-- Main Site section, this section will change depending on what user is selecting-->
-      <div id="main" class="container-fluid">
-          <div id="searchBar">
-            <table id="searchRow">
-              <tr>
-              <form class = "searchForm">
-                  <input type="searchText" id="userSearch" value="What are you looking for?" />
-              </form>
-              <button class="searchButton" onclick="userSearch()">GO</button>
-            </tr>
+
+<div id=parent>
+
+<div id="main2">
+  <table id="trendingPosts">
+              <tbody>
+                  <th>Trending</th>
+                  <tr><td style="padding-top:15px">Trend 1</td></tr>
+                  <tr><td>Trend 2</td></tr>
+                  <tr><td>Trend 3</td></tr>
+                  <tr><td>Trend 4</td></tr>
+                  <tr><td>Trend 5</td></tr>
+                  <tr><td>Trend 6</td></tr>
+                  <tr><td>Trend 7</td></tr>
+                  <tr><td>Trend 8     </td></tr>
+                  <tr><td>Trend 9                    </td></tr>
+                  <tr style="width:100%";><td>Trend 101111111             </td></tr>
+              </tbody>
           </table>
-          </div>
+</div>
+
+
+      <div id="main" class="container-fluid">
+
 
           <div id="EC">
               Education Career
@@ -97,15 +131,15 @@
               UsingPointPerson
           </div>
 
-      </div>
-      <div id="termsOfService" style="hidden">
+          </div>
+          <div id="termsOfService" style="hidden">
           Here are the terms of service
           The rules are.....
+          </div>
 
+        </div>
 
       </div>
-
-
 
       <!-- Bottom Navigation, done as a table -->
       <div id="botNav">
